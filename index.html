@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - JanzStore</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a2e;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #1a1a2e;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .menu a:hover {
+      color: #ffa500;
+    }
+
+    .dashboard-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .dashboard-container h1 {
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .dashboard-container p {
+      font-size: 18px;
+      color: #557;
+      margin-bottom: 40px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-secondary {
+      background-color: #28a745;
+    }
+
+    .btn-secondary:hover {
+      background-color: #218838;
+    }
+
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a2e;
+      color: white;
+      font-size: 14px;
+    }
+
+    /* Items Section */
+    .items-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #1a1a2e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .item-card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .item-card:hover {
+      transform: scale(1.05);
+    }
+
+    .item-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .item-description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">JanzStore</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="aplikai.html">About</a>
+      <a href="wa.me/6289676753517">Contact</a>
+    </div>
+  </div>
+
+  <!-- Dashboard Content -->
+  <div class="dashboard-container">
+    <h1>Welcome to JanzStore</h1>
+    <p>Your go-to platform for premium apps and services. Manage your subscriptions with ease and browse through our exclusive store.</p>
+    
+    <div class="button-container">
+      <a href="aplikasi.html"class="btn">View Our Products</a>
+    </div>
+  </div>
+
+  <!-- Items Section -->
+  <div class="items-container">
+    <div class="item-card">
+      <div class="item-title">Aplikasi Premium</div>
+      <div class="item-description">Nikmati akses aplikasi premium dengan harga terjangkau dan garansi penuh.</div>
+      <div class="price">Rp2.000 - Rp120.000</div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-title">Top-up Game</div>
+      <div class="item-description">Top-up game favorit Anda dengan harga terbaik dan langsung masuk.</div>
+      <div class="price">Rp900 - Rp5.000.000</div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-title">Suntik Sosial Media</div>
+      <div class="item-description">Tingkatkan followers, likes, dan engagement sosial media Anda dengan aman.</div>
+      <div class="price">Rp10.000 - Rp50.000.000</div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-title">Hosting Game</div>
+      <div class="item-description">Dapatkan hosting game dengan performa tinggi dan stabil untuk komunitas gaming Anda.</div>
+      <div class="price">Rp5.000 - Rp1.000.000</div>
+    </div>
+    
+    <div class="item-card">
+      <div class="item-title">Website Designer</div>
+      <div class="item-description">Dapatkan Website Dengan Desain Yang Bagus Dan Menarik</div>
+      <div class="price">Rp20.000 - Rp15.000.000</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 JanzStore. All Rights Reserved.
+  </div>
+</body>
+</html>

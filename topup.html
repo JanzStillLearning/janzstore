@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janz Topup</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a1a2e;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e2e4e;
+        }
+
+        .banner img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .banner h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .banner p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #A9A9A9;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            }
+
+        .tabs a {
+            text-decoration: none;
+        }
+
+        .tabs button {
+            background-color: #2e2e4e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .tabs button.active {
+            background-color: #007bff;
+        }
+
+        .tabs button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .app-card {
+            background-color: #2e2e4e;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .app-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .app-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .app-card p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .app-card .status {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        
+        .about-store {
+            background-color: #2e2e4e;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+.about-store h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-store p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-store h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-store ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-store ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+        /* Animasi Fade In untuk produk */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <h3>JanzStore</h3>
+    </div>
+</header>
+
+<div class="banner">
+    <h1>Selamat Datang Di Janz Store</h1>
+    <p>Selamat datang di JanzStore, solusi lengkap untuk kebutuhan digital Anda! Kami menyediakan layanan premium mulai dari hosting dan domain berkualitas, backup server yang aman, hingga suntik sosmed dan top-up game yang cepat dan terpercaya</p>
+</div>
+
+<div class="tabs">
+    <a href="aplikasi.html"><button>Aplikasi Premium</button></a>
+    <a href="topup.html"><button class="active">Topup Game</button></a>
+    <a href="suntik.html"><button>Suntik Sosmed</button></a>
+    <a href="hosting.html"><button>Panel Hosting</button></a>
+    <a href="nokos.html"><button>Nokos Aplikasi</button></a>    
+</div>
+
+<div class="app-grid">
+    <!-- Daftar produk topup -->
+    <a href="ff.html" class="app-card fade-in">
+        <img alt="Free Fire" src="../img/efef.jpeg"/>
+        <div class="status">Tersedia</div>
+        <h3>Free Fire</h3>
+        <h6>Topup Diamond</h6>
+    </a>
+    <a href="mobilelegend.html" class="app-card fade-in">
+        <img alt="Mobile Legend" src="../img/ml.jpeg"/>
+        <div class="status">Tersedia</div>
+        <h3>Mobile Legend</h3>
+        <h6>Topup Diamond</h6>
+    </a>
+</div>
+<div class="about-store">
+    <h2>Tentang Janz Store</h2>
+    <p>Janz Store adalah toko online yang berfokus menyediakan berbagai aplikasi premium dan layanan top-up game dengan harga terjangkau, cepat, dan aman. Kami berkomitmen untuk memberikan pengalaman terbaik bagi pelanggan dengan proses transaksi yang cepat dan dukungan pelanggan yang responsif.</p>
+
+    <h3>Misi Kami</h3>
+    <p>Misi kami adalah memberikan akses kepada pengguna ke aplikasi dan layanan terbaik di industri dengan harga yang kompetitif, memastikan bahwa setiap transaksi aman, dan pelanggan selalu mendapatkan produk yang mereka butuhkan dengan mudah.</p>
+
+    <h3>Layanan Kami</h3>
+    <ul>
+        <li>Aplikasi Premium: Menyediakan akses ke aplikasi premium populer seperti <strong>Vision Plus</strong>, <strong>Alight Motion</strong>, dan <strong>WeTV</strong>.</li>
+        <li>Top-Up Game: Menyediakan layanan top-up cepat dan aman untuk berbagai game populer dengan harga terjangkau.</li>
+        <li>Dukungan Pelanggan: Tim kami siap membantu kapan saja untuk memastikan setiap pelanggan mendapatkan layanan terbaik.</li>
+    </ul>
+
+    <h3>Hubungi Kami</h3>
+    <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi kami di:</p>
+    <p><i class="fas fa-phone"></i> +62 896-7675-3517</p>
+
+    <div class="social-links">
+        <a href="wa.me/6289676753517"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/janzstoreid"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+<script>
+    // Animasi fade in untuk produk saat halaman dimuat
+    window.onload = function() {
+        document.querySelectorAll('.app-card').forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('fade-in');
+            }, index * 200);
+        });
+    };
+</script>
+</body>
+</html>
